@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:p0411/models/offices.dart';
+
+import 'offices.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,7 +9,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(title: 'Flutter JSON Demo', home: MyHomePage());
@@ -19,7 +19,7 @@ class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
